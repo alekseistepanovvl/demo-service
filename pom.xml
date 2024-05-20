@@ -32,14 +32,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-<!--		<dependency>-->
-<!--			<groupId>com.azure.spring</groupId>-->
-<!--			<artifactId>spring-cloud-azure-starter-active-directory</artifactId>-->
-<!--		</dependency>-->
-<!--		<dependency>-->
-<!--			<groupId>com.azure.spring</groupId>-->
-<!--			<artifactId>spring-cloud-azure-starter-actuator</artifactId>-->
-<!--		</dependency>-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-sleuth</artifactId>
+			<version>3.1.11</version>
+		</dependency>
 		<dependency>
 			<groupId>com.microsoft.sqlserver</groupId>
 			<artifactId>mssql-jdbc</artifactId>
@@ -66,17 +63,6 @@
 			<version>1.12.0</version>
 		</dependency>
 	</dependencies>
-	<dependencyManagement>
-		<dependencies>
-<!--			<dependency>-->
-<!--				<groupId>com.azure.spring</groupId>-->
-<!--				<artifactId>spring-cloud-azure-dependencies</artifactId>-->
-<!--				<version>${spring-cloud-azure.version}</version>-->
-<!--				<type>pom</type>-->
-<!--				<scope>import</scope>-->
-<!--			</dependency>-->
-		</dependencies>
-	</dependencyManagement>
 
 	<build>
 		<plugins>
